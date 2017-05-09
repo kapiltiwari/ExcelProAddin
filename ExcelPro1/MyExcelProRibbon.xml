@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+  <ribbon>
+    <tabs>
+      <tab insertAfterMso="TabAddIns" label="ExcepPro1" id="exceppro">
+        <group id="ContentGroup">
+          <button id="viewDashboardButton" label="View Dashboard"
+               screentip="View Dashboard" onAction="OnViewDashboardButton"
+               supertip="View ExcepPro Dashboard." getImage="getImages" size="large" 
+               />
+        </group>
+        <group id="ItemGroup" label="Items">
+          <button id="viewItemButton" label="View Items"
+               screentip="View Items" onAction="OnViewItemButton"
+               supertip="View list of items." getImage="getImages"/>
+          <button id="addItemButton" label="Add Item"
+               screentip="Add Items" onAction="OnAddItemButton"
+               supertip="Add a new items to list of items." getImage="getImages"/>
+          <button id="searchItemButton" label="Search Item"
+               screentip="Search Items" onAction="OnSearchItemButton"
+               supertip="Search for an item in the list of items." getImage="getImages"/>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+
